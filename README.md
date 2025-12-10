@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/branding/logo.png" width="120" />
+  <img src="assets/branding/logo (2).png" width="120" />
 </p>
 
 <h1 align="center">Teacher’s Portal</h1>
