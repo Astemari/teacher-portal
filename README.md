@@ -16,7 +16,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Teacher’s Portal is a modern, open-source web platform designed to help teachers manage:
 
@@ -30,7 +30,7 @@ This system is built as part of an academic open-source project under the **Aste
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 - Provide teachers with a simple and efficient classroom management tool  
 - Apply real-world software engineering practices  
@@ -39,7 +39,7 @@ This system is built as part of an academic open-source project under the **Aste
 
 ---
 
-## ⚙️ Tech Stack (To Be Finalized)
+##  Tech Stack (To Be Finalized)
 
 ### Frontend
 - **Framework:** _(to be filled)_
@@ -62,7 +62,7 @@ This system is built as part of an academic open-source project under the **Aste
 
 ---
 
-## ✨ Core Features
+##  Core Features
 
 - Teacher authentication and access control  
 - Class and student management  
@@ -73,19 +73,19 @@ This system is built as part of an academic open-source project under the **Aste
 
 ---
 
-## 🚀 Getting Started (Development)
+##  Getting Started (Development)
 
 > Detailed setup instructions will be added once the tech stack is finalized.
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 Testing strategy and tools will be documented after the initial system architecture is completed.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome and encouraged.
 
@@ -95,20 +95,20 @@ Please read:
 
 ---
 
-## 📸 Screenshots & Demo
+##  Screenshots & Demo
 
 Screenshots and demo recordings will be added during the development phase.
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License**.  
 See the `LICENSE.md` file for full details.
 
 ---
 
-## 🏗️ Built By
+##  Built By
 
 **Astemari**  
 Student-led software organization focused on open-source education tools.
