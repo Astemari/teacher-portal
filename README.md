@@ -1,124 +1,96 @@
+# Teacher’s Portal
+
 <p align="center">
   <img src="assets/branding/logo (2).png" width="120" />
 </p>
 
-<h1 align="center">Teacher’s Portal</h1>
+## Overview
 
-<p align="center">
-  An open-source education management system built by <strong>Astemari</strong>.
-</p>
-
-<p align="center">
-  <a href="#">Live Demo</a> •
-  <a href="#">GitHub Organization</a> •
-  <a href="#">Documentation</a>
-</p>
+Teacher’s Portal is a Java-based desktop application for educational management. It allows administrators and teachers to manage classes, students, attendance, assignments, grades, and communication, all through a user-friendly Swing GUI. Data is stored in CSV files for easy portability and transparency.
 
 ---
 
-##  Overview
+## How the Project Works
 
-Teacher’s Portal is a modern, open-source web platform designed to help teachers manage:
+- **User Roles:**
+  - **Admin:** Can add teachers, manage users, and oversee the system.
+  - **Teacher:** Can enroll students, manage assignments, record grades, and track attendance.
+  - **Student:** (if implemented) Can view their grades and assignments.
 
-- Classes
-- Students
-- Attendance
-- Assignments
-- Grades and performance reports
+- **Authentication:**
+  - Admin and teacher credentials are stored in CSV files (e.g., `Admin.csv`).
+  - Login screens validate users against these files.
 
-This system is built as part of an academic open-source project under the **Astemari** organization with a strong focus on clean architecture, collaboration, and usability.
+- **Data Management:**
+  - All user, attendance, and grade data is stored in CSV files in the project root.
+  - The application reads and writes to these files using custom Java methods.
 
----
+- **Assignments & Grades:**
+  - Teachers can create assignments, quizzes, and finals, and record grades for each student.
+  - Attendance and marks are tracked per class and section.
 
-##  Project Objectives
+- **Communication:**
+  - The app can send emails and attachments to students using JavaMail (requires configuration).
 
-- Provide teachers with a simple and efficient classroom management tool  
-- Apply real-world software engineering practices  
-- Encourage open-source collaboration among students  
-- Build a production-ready academic system  
-
----
-
-##  Tech Stack (To Be Finalized)
-
-### Frontend
-- **Framework:** _(to be filled)_
-- **Styling:** _(to be filled)_
-- **State Management:** _(to be filled)_
-
-### Backend
-- **Runtime:** _(to be filled)_
-- **Framework:** _(to be filled)_
-- **Authentication:** _(to be filled)_
-
-### Database
-- **Database Type:** _(to be filled)_
-- **ORM / ODM:** _(to be filled)_
-
-### DevOps & Tooling
-- **Version Control:** Git & GitHub  
-- **CI/CD:** _(to be filled)_
-- **Deployment:** _(to be filled)_
+- **GUI:**
+  - Built with Java Swing and NetBeans GUI Builder (AbsoluteLayout).
+  - Forms for login, enrollment, assignment creation, and more.
 
 ---
 
-##  Core Features
+## Tech Stack
 
-- Teacher authentication and access control  
-- Class and student management  
-- Attendance tracking  
-- Assignment creation and grading  
-- Performance reporting and exports  
-- Responsive and accessible UI  
-
----
-
-##  Getting Started (Development)
-
-> Detailed setup instructions will be added once the tech stack is finalized.
+- **Language:** Java 21
+- **Build Tool:** Apache Ant
+- **GUI:** Java Swing (NetBeans AbsoluteLayout)
+- **Email:** JavaMail (javax.mail, activation)
+- **Data Storage:** CSV files (no database required)
+- **IDE:** NetBeans (recommended for GUI editing)
 
 ---
 
-##  Testing
+## Project Structure
 
-Testing strategy and tools will be documented after the initial system architecture is completed.
-
----
-
-##  Contributing
-
-Contributions are welcome and encouraged.
-
-Please read:
-- `CONTRIBUTING.md` for contribution guidelines  
-- `CODE_OF_CONDUCT.md` for community standards  
+- `src/` — Java source code (organized by package)
+- `lib/` — External libraries (JARs: mail.jar, activation.jar, AbsoluteLayout.jar)
+- `Admin.csv` — Admin user data
+- `build.xml` — Ant build script
+- `dist/` — Output JAR
+- `assets/branding/` — Logo and color palette
 
 ---
 
-##  Screenshots & Demo
+## Setup & Usage
 
-Screenshots and demo recordings will be added during the development phase.
+1. **Clone the repository:**
+   ```bash
+   git clone <repo-url>
+   cd teacher-portal
+   ```
+2. **Add required JARs to `lib/`:**
+   - `mail.jar` (JavaMail 1.6.x)
+   - `activation.jar` (Activation 1.1.x)
+   - `AbsoluteLayout.jar` (NetBeans AbsoluteLayout)
+3. **Build the project:**
+   ```bash
+   ant jar
+   ```
+4. **Run the application:**
+   ```bash
+   java -cp "dist/Teacher_Portal.jar:lib/*" teacher_portal_GUI.Main
+   ```
 
 ---
 
-##  License
+## Contributing
+See `CONTRIBUTING.md` for guidelines. All contributions are welcome!
 
-This project is licensed under the **MIT License**.  
-See the `LICENSE.md` file for full details.
+## License
+MIT License — see `LICENSE` for details.
 
----
-
-##  Built By
-
-**Astemari**  
-Student-led software organization focused on open-source education tools.
+## Contact
+- GitHub Organization: [Astemari](#)
+- Email: _(to be added)_
 
 > “Building tools for better learning.”
-
----
-
-## 📬 Contact
-
-- GitHub Organization: _(to be added)_
-- Email: _(to be added)_
 
