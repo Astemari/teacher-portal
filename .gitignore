@@ -1,0 +1,23 @@
+# Build output
+/build/
+/dist/
+
+# NetBeans project files (optional, if you want a clean repo)
+nbproject/private/
+nbproject/build-impl.xml
+
+# IDE files
+*.iml
+*.ipr
+*.iws
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
