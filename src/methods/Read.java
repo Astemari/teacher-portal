@@ -124,24 +124,7 @@ public interface Read {
             }
              return myEntries;
         }
-    public static List<String[]> takeTheWholeAdmin()
-        {
-            String fileName = "Admin.csv";
-            String line;
-            String csvSplitBy = ",";
-            List<String[]> myEntries = new ArrayList<>();
-    
-            try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-                
-                while ((line = br.readLine()) != null) {
-                    String[] fields = line.split(csvSplitBy);
-                    myEntries.add(fields);
-                }
-      
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return myEntries;
-            
-        }
+    public static List<String[]> takeTheWholeAdmin() {
+        return UserPreferences.getAllUsers();
+    }
 }

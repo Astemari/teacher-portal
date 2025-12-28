@@ -5,17 +5,16 @@ import java.io.IOException;
 import java.util.*;
 import users.*;
 
-
 public interface Write {
 
-    public static void toAdmin(Teacher teacher)
-    {
-            try (FileWriter fileWriter = new FileWriter("Admin.csv", true)) {
-            String teacherInfo = teacher.getId() + "," + teacher.getName() + "," + teacher.getPassword()+ "," + teacher.getemail()+ "," + teacher.getSec() +"\n";
-            fileWriter.write(teacherInfo);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public static void toAdmin(Teacher teacher) {
+        UserPreferences.saveUser(
+            teacher.getId(),
+            teacher.getName(),
+            teacher.getPassword(),
+            teacher.getemail(),
+            teacher.getSec()
+        );
     }
 
     public static void firstLineAttendance(String fileName)
@@ -70,12 +69,8 @@ public interface Write {
         }
     }
     
-    public static int getnewId()
-    {
-        List<String[]> adminFile = new ArrayList<>();
-        adminFile = Read.takeTheWholeAdmin();
-        
-        return adminFile.size() + 1;
+    public static int getnewId() {
+        return UserPreferences.getAllUsers().size() + 1;
     }
     
     public static int getNewStudId(String fileName)
